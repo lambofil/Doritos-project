@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent-container">
+        <nav class="nav-body">
+            <div class="nav-container">
+                <div>
+                    <h2>Doritos</h2>
+                </div>
+                <div>
+                    <ul >
+                        <li><a href=""> Home</a></li>
+                        <li><a href="">Our Products</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-div">
+            <div class="main-body">
+                <div class="body-container">
+                    <h1 class="child-1">Doritos</h1>
+                    <p>Not just a chip. Doritos gives <br> you the fuel to distrupt and take <br> gaming to another level.</p>
+                   <button class="btn">All Products</button>
+                </div>
+                <div>
+                    <img src="images/EAMES CHAIR - Default.png" alt="" id="e" width="150px">
+                </div>
+            </div>
+        </div>
+    
+        <div class="img-div">
+            <img src="images/IKENGA - Default.png" alt=""  id="a" width="20px" onclick="furnitures()">
+            <img src="images/FEMI V2 - Default.png" alt="" id="b" width="20px" onclick="furnitures()">
+            <img src="images/BOSUN COFFEE TABLE - Default.png" alt="" id="c" width="20px" onclick="furnitures()">
+            <img src="images/EAMES CHAIR - Default.png" alt="" id="d" width="20px" onclick="furnitures()">
+        </div>
+       
+    </div>
+        
+    <script>
+        document.getElementById('a').onclick = function furnitures() {document.getElementById('e').src='./images/IKENGA - Default.png'};
+        document.getElementById('b').onclick = function furnitures() {document.getElementById('e').src='images/FEMI V2 - Default.png'};
+        document.getElementById('c').onclick = function furnitures() {document.getElementById('e').src='./images/BOSUN COFFEE TABLE - Default.png'};
+        document.getElementById('d').onclick = function furnitures() {document.getElementById('e').src='./images/EAMES CHAIR - Default.png'};
+    </script>
+
+</body>
+</html>
